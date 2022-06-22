@@ -1,0 +1,18 @@
+{
+  "name": "jsx-stimulus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "mix": "mix"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.0.1",
+    "dom-chef": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.17.12",
+    "@hotwired/stimulus-webpack-helpers": "^1.0.1",
+    "laravel-mix": "^6.0.49"
+  }
+}

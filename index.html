@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div data-controller="view">
+      <p>The content below will come from JSX.</p>
+
+      <div style="margin: 2rem 0">
+        <button type="button" data-action="click->view#renderContent">
+          Render Content
+        </button>
+
+        <div data-view-target="renderer">
+          <p>Content replaced...</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./dist/app.js"></script>
+  </body>
+</html>
