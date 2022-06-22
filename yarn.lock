@@ -2256,7 +2256,7 @@ csso@^4.2.0:
   dependencies:
     css-tree "^1.1.2"
 
-csstype@^3.0.2:
+csstype@^3.0.2, csstype@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
@@ -3247,6 +3247,13 @@ jsonfile@^6.0.1:
     universalify "^2.0.0"
   optionalDependencies:
     graceful-fs "^4.1.6"
+
+jsx-dom@^8.0.1-beta.8:
+  version "8.0.1-beta.8"
+  resolved "https://registry.yarnpkg.com/jsx-dom/-/jsx-dom-8.0.1-beta.8.tgz#37e5e6e9740e1dcfaab5c8b2f9663f8857b9271b"
+  integrity sha512-ZD4nkR6UD39QxbMcJUWq+h/XV2OfDX3Y4SqPm/drsrDwJcbZfrVvSb82j00wxo9ZxlRbrPwkvpEZrjfR0r1rjA==
+  dependencies:
+    csstype "^3.1.0"
 
 junk@^3.1.0:
   version "3.1.0"

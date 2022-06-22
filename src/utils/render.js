@@ -1,5 +1,3 @@
-// import { CommonDOMRenderer } from "render-jsx/dom";
-import { h } from "dom-chef";
 import { Controller } from "@hotwired/stimulus";
 
 class Renderer extends Controller {
@@ -9,4 +7,4 @@ class Renderer extends Controller {
   }
 }
 
-export { Renderer, h };
+export { Renderer };

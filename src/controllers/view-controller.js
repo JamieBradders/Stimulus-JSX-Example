@@ -1,4 +1,5 @@
-import { h, Renderer } from "../utils/render";
+import { Renderer } from "../utils/render";
+import { renderExample } from "../components/Example";
 
 export default class ViewController extends Renderer {
   static targets = ["renderer"];
@@ -8,17 +9,16 @@ export default class ViewController extends Renderer {
   };
 
   renderContent = () => {
-    const content = (
-      <div className="app">
-        <h1>Hello there!</h1>
-
-        <button type="button" data-action="click->view#handleClick">
-          I will do something
-        </button>
-      </div>
-    );
-
     if (this.hasRendererTarget) {
+      const data = {
+        product: {
+          title: "My Product",
+          handle: "my-product",
+        },
+      };
+
+      const content = renderExample(data);
+
       this.render(content, this.rendererTarget);
     }
   };

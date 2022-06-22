@@ -4,11 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "mix": "mix"
+    "mix": "mix",
+    "watch": "mix watch"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.0.1",
-    "dom-chef": "^5.1.0"
+    "dom-chef": "^5.1.0",
+    "jsx-dom": "^8.0.1-beta.8"
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.17.12",
