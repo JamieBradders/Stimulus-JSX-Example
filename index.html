@@ -5,22 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="/dist/app.css" rel="stylesheet" media="screen" />
   </head>
   <body>
-    <div data-controller="view">
-      <p>The content below will come from JSX.</p>
+    <div class="max-w-7xl mx-auto p-6">
+      <h1 class="font-black text-5xl mb-6 mt-4">Product Title</h1>
 
-      <div style="margin: 2rem 0">
-        <button type="button" data-action="click->view#renderContent">
-          Render Content
+      <div class="max-w-2xl space-y-6 mb-6">
+        <p class="leading-9 text-xl">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p class="leading-9 text-xl font-medium">
+          Imagine the component below is going to obtain a random fact about
+          cats when you click the button. The fact will appear below the button
+          and the content will be generated via a JSX template. This will
+          converted to a HTML string that is then appended to a target element.
+        </p>
+      </div>
+
+      <article
+        class="border-4 border-indigo-600 p-6 rounded space-y-6"
+        data-controller="cat"
+      >
+        <h2 class="font-bold text-3xl">Learn about Cats!</h2>
+        <p class="leading-9 text-xl font-medium">
+          Click the button below to learn a random fact about cats.
+        </p>
+
+        <button
+          type="button"
+          aria-label="Learn about cats"
+          data-action="cat#getFact"
+          class="px-4 py-2 font-semibold text-sm bg-indigo-500 text-white rounded-full shadow-sm"
+        >
+          Learn about cats
         </button>
 
-        <div data-view-target="renderer">
-          <p>Content replaced...</p>
-        </div>
-      </div>
+        <div data-cat-target="renderer"></div>
+      </article>
     </div>
 
-    <script src="./dist/app.js"></script>
+    <script src="/dist/app.js"></script>
   </body>
 </html>
